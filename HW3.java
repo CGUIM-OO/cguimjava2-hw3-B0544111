@@ -1,11 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import javax.smartcardio.Card;
 //import java.util.Scanner;
 
 /**
- * @author TODO:student ID°GB0544111 and name°GºB©˚øŸ
+ * B0544231 Ë¨ùÂøÉÁëÄ
  * Try to write some comments for your codes (methods, 10 points)
  */
 public class HW3 {
@@ -16,7 +14,6 @@ public class HW3 {
 		int nDeck=1;
 		//TODO: please add new fields and methods to Deck class (35)
 		//usedCard (5 points)
-		Deck usedCard = new Deck();
 		//nUsed (5 points)
 		//getOneCard (10 points)
 		//shuffle (10 points)
@@ -26,9 +23,7 @@ public class HW3 {
 		//TODO: please check your output, make sure that you print newCard and newCard2 on your screen  (10 points)
 		//TODO: please add new fields and methods to Card class (25)
 		//Use enumerated type in Card (10 points)
-		
 		//Constructor (5 points)
-		Card newCard = new Card(suit, rank);
 		//printCard (5 points)
 		//getSuit (5 points)
 		Card newCard=deck.getOneCard();
@@ -38,7 +33,7 @@ public class HW3 {
 		deck.shuffle();
 		if(isAllCardsCorrect(deck.getAllCards(),nDeck)){
 			if(!isShuffleWorking(deck,newCard,newCard2)){
-				System.out.println("All Card: Well done! But shufller is not working");
+				System.out.println("All Card: Well done! But shuffler is not working");
 			}else{
 				System.out.println("Well done!");
 			}
